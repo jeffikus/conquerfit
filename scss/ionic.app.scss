@@ -16,6 +16,58 @@ $dark:                            #444 !default;
 */
 
 $stable: #5E768F;
+$positive: #3C5A97;
+$balanced: #7ED321;
+
+.login-background {
+	background: url(../img/splash.png) no-repeat center center fixed; 
+	-webkit-background-size: 100%;
+	-moz-background-size: 100%;
+	background-size: 100%;
+}
+
+.signup-form {
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 70%;
+	font-family: Helvetica;
+
+	p {
+		text-align: center;
+	}
+}
+
+.button {
+	border-radius: 5px !important;
+	font-size: 15px !important;
+	border: none !important;
+	display: block !important;
+	margin-right: auto !important;
+	margin-left: auto !important;
+}
+
+.button-full {
+	width: 80% !important;
+}
+
+.list-inset {
+	width: 80% !important;
+	display: block !important;
+	margin-right: auto !important;
+	margin-left: auto !important;
+}
+
+.or-text {
+	color: #4A4A4A;
+	font-weight: bold;
+	margin-top: 15px;
+}
+
+.terms-text {
+	color: #5E768F;
+	font-weight: bold;
+	margin-top: 60px;
+}
 
 // The path for our ionicons font files, relative to the built CSS in www/css
 $ionicons-font-path: "../lib/ionic/fonts" !default;

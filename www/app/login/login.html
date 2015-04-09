@@ -1,18 +1,26 @@
-<ion-view view-title="Login">
-  <ion-content>
+<ion-view view-title="Login" class="login-background">
 
-    Email: <input type="text" ng-model="login.email">
-  	Password: <input type="text" ng-model="login.password">
+  <div class="signup-form">
 
-  	<br><br>
+    <button class="button button-full button-positive icon-left ion-social-facebook" id="button-custom" ng-click="login.connectFacebook()">CONNECT WITH FACEBOOK</button>
 
-  	<button ng-click="login.createUser()">Create User</button>
+    <p class="or-text">or sign up</p>
+    
+    <div class="list list-inset signup">
+      <label class="item item-input">
+        <span class="input-label">Email</span>
+        <input type="text" placeholder="name@example.com" ng-model="login.email">
+      </label>
+      <label class="item item-input">
+        <span class="input-label">Password</span>
+        <input type="password" ng-model="login.password">
+      </label>
+    </div>
 
-  	<br><br>
+    <button class="button button-balanced" ng-click="login.createUser()">Sign up</button>
+    <!--<button class="button button-assertive" ng-click="login.removeUser()">Remove User</button>-->
 
-  	<button ng-click="login.removeUser()">Remove User</button>
-
-  	<p ng-if="login.message">Message: <strong>{{ login.message }}</strong></p>
-  	<p ng-if="login.error">Error: <strong>{{ login.error }}</strong></p>
-  </ion-content>
+    <p class="terms-text">Terms of Service and Privacy Policy</p>
+  </div>
+  
 </ion-view>
